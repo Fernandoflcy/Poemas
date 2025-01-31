@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vela e Ego - Poema Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vela e Ego</h1>
+    <h2>Por Fernando Flcy</h2>
+    
+    <audio id="musica" loop>
+      <source src="you.mp3" type="audio/mpeg">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+    <div id="controles">
+      <button id="btn-lento">Lento</button>
+      <button id="btn-normal">Normal</button>
+      <button id="btn-rapido">Rápido</button>
+    </div>
+    
+    <div id="poema"></div>
+    <button id="btn-iniciar">Iniciar Poema</button>
+    <button id="btn-reiniciar" style="display: none;">Reiniciar Poema</button>
+    
+    <div id="compartilhar">
+      <a href="#" id="btn-facebook">Compartilhar no Facebook</a>
+      <a href="#" id="btn-twitter">Compartilhar no Twitter</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

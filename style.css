@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #1e1e2f;
+  color: #f4f1de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('poema.jpeg'); /* Adicione uma imagem de fundo temática */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(30, 30, 47, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #e07a5f;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #81b29a;
+}
+
+#poema {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 20px;
+  min-height: 300px;
+  padding: 20px;
+  background-color: rgba(242, 204, 143, 0.1);
+  border-radius: 10px;
+  border: 1px solid #3d405b;
+  overflow: hidden; /* Para garantir que o conteúdo não vaze */
+  animation: subir 3s linear forwards; /* Ajuste o tempo conforme necessário */
+}
+
+@keyframes subir {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes subir {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+#btn-iniciar {
+  background-color: #81b29a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn-iniciar:hover {
+  background-color: #689d8a;
+}
+
+#controles {
+  margin-top: 20px;
+}
+
+#controles button {
+  background-color: #3d405b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#controles button:hover {
+  background-color: #2d2f3f;
+}
+
+.verso {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
